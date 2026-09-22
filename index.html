@@ -21,75 +21,70 @@
 
 <body>
 
-
+    <!-- logo -->
     <div id="nav">
         <div class="logo">
             <h5> <i class="fa-solid fa-house"></i><span style="margin-left: 10px;">MEAL FINDER</span> </h5>
         </div>
 
-        <!-- <nav class="navbar bg-body-tertiary"> -->
-          <div style="z-index:100;">
+        <!-- Menu bar -->
+        <div class="menu-container">
 
-           
-        <div class="container-fluid" style="margin-right: 20px;">
-            <button  data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init
+            <!-- HAMBURGER BUTTON -->
+            <button class="menu-open-btn" type="button" data-mdb-button-init data-mdb-collapse-init
                 data-mdb-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2"
-                aria-expanded="false" aria-label="Toggle navigation" >
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <!-- </nav> -->
-        <div class="collapse" id="navbarToggleExternalContent2">
-            <div class="bg-body-tertiary shadow-3 p-4">
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Beef</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Chicken</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Dessert</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Lamb</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Miscellaneous</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Pasta</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Pork</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Seafood</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Side</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Starter</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">vegan</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Vegetarain</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Breakfast</button>
-                <button data-mdb-button-init data-mdb-ripple-init
-                    class="btn btn-link btn-block border-bottom m-0">Goat</button>
+                aria-expanded="false">
 
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="collapse menu-panel" id="navbarToggleExternalContent2">
+
+                <div class="menu-content">
+                    <button class="menu-close-btn" type="button" data-mdb-button-init data-mdb-collapse-init
+                        data-mdb-target="#navbarToggleExternalContent2">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+                    <div id="one11"></div>
+                    <!-- <button id="one" class="btn btn-link border-bottom"> </button> -->
+
+
+                </div>
 
             </div>
+
         </div>
-         </div>
+
+
+
+
     </div>
 
 
 
     <!-- banner -->
-     <div class="banner">
-        
-         <div class="con">
-        <form id="Search">
-            <input type="text" placeholder="Search recipes here....">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-        <h1>What are your favourite cuisines?</h1>
-        <h4>PERSONALIZE YOUR EXPERIENCE</h4>
+    <div class="banner">
+
+        <div class="con">
+            <form id="Search">
+                <input type="text" placeholder="Search recipes here....">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <h1>What are your favourite cuisines?</h1>
+            <h4>PERSONALIZE YOUR EXPERIENCE</h4>
         </div>
-     </div>
+    </div>
+
+
+
+    <!-- Categories -->
+    <div class="Categories">
+        <h1>Categories</h1>
+        <hr>
+    </div>
 
 
 

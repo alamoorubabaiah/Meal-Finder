@@ -18,6 +18,77 @@
     margin-left: 20px;
 }
 
+
+
+.menu-container {
+    position: relative;
+    z-index: 3000;
+}
+
+
+/* HAMBURGER */
+
+.menu-open-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 3001;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 285px;
+    height: 100vh;
+    z-index: 3000;
+    background-color: white;
+    overflow-y: auto;
+}
+
+
+.menu-content {
+    position: relative;
+    min-height: 100vh;
+    padding: 70px 20px 20px;
+    background-color: white;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3002;
+    border: none;
+    background: transparent;
+    color: rgb(245, 77, 16);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.menu-content .btn {
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #555;
+    padding: 12px 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 /* banner */
 .banner{
     background-image: url("./assets/Banner.png");
@@ -60,3 +131,18 @@
     padding-top: 150px;
     line-height: 5;
 }
+.Categories{
+    color: black;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.Categories hr {
+    border: none;
+    height: 3px;
+    background-color: orangered ;
+    opacity: 1;
+    width: 90px;
+    height: 5px;
+}
+
+
