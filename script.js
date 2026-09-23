@@ -38,3 +38,41 @@ fn()
 
 
 
+
+/* filter */
+
+async function fdata(){
+    let func = document.getElementById("func")
+    let search = document.getElementById('Search').value.toLowerCase().trim()
+    // console.log(search)//pasta
+
+    if(search ===""){
+        func.innerHTML =""
+        return
+    }
+
+    let res = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+    let d = await res.json()
+    // console.log(d)//array of obj
+    let result1 = d.meals.map((value)=>{
+        return `<div class = "filt">
+          <h6>${value.strCategory}</h6>
+          <img src = "${value.strMealThumb}">
+          <p>${value.strArea}</p>
+          <h5>${value.strMeal}
+        </div> `
+
+    })
+    func.innerHTML = result1.join("")
+ 
+
+}
+  
+
+
+
+// menu items while clicking
+
+
+
+
