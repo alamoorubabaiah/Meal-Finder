@@ -19,8 +19,22 @@ async function user(){
 }
 user()
 
-
-
+/* cards */
+let cart = document.getElementById("cart")
+async function fn(){
+    let resolve = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+    let data = await resolve.json()
+    let result = data.categories.map((value)=>{
+        return `
+        <div class="items">
+        <h6>${value.strCategory}</h6>
+        <img src ="${value.strCategoryThumb}">
+        </div>
+        `
+    })
+    cart.innerHTML += result.join("");
+}
+fn()
 
 
 
