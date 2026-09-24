@@ -28,7 +28,7 @@ async function fn(){
         return `
         <div class="items">
         <h6>${value.strCategory}</h6>
-        <img src ="${value.strCategoryThumb}">
+        <img src="${value.strCategoryThumb}" onclick="vegfun('${value.strCategory}')">
         </div>
         `
     })
@@ -57,9 +57,9 @@ async function fdata(){
     let result1 = d.meals.map((value)=>{
         return `<div class = "filt">
           <h6>${value.strCategory}</h6>
-          <img src = "${value.strMealThumb}">
+          <img src = "${value.strMealThumb}" width = "240px">
           <p>${value.strArea}</p>
-          <h5>${value.strMeal}
+          <h5>${value.strMeal}</h5>
         </div> `
 
     })
@@ -67,11 +67,28 @@ async function fdata(){
  
 
 }
-  
 
 
 
 // menu items while clicking
+ let veg = document.getElementById("veg")
+async function vegfun(cate){
+    let resolve2 = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+    // console.log(resolve2);
+    let data1 = await resolve2.json()
+    let result2 = data1.categories.find((value1)=>{
+        
+         return value1.strCategory === category;
+
+        
+    });
+    // veg.innerHTML = result2
+    console.log(resolve2);
+    
+
+
+    
+}
 
 
 
