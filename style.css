@@ -81,21 +81,11 @@
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
 /* banner */
 .banner{
     background-image: url("./assets/Banner.png");
      width: 100%;
-    height: 500px;
-
-    
+    height: 500px;  
 }
 
 #form input{
@@ -220,8 +210,6 @@
 .filt img{
      border-radius: 5px;
      height: 200px;
-    
-
 }
 .filt h5{
     color: black;
@@ -230,3 +218,88 @@
     color: black;
 }
 
+
+/* secondpage */
+.category-description {
+
+    margin: 30px 12px 50px;
+    padding: 15px;
+    border: 1px solid #f06a28;
+    background: #ffffff;
+}
+
+.category-description h2 {
+    color: #f06a28;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.category-description p {
+
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.meals-title {
+    margin: 0 12px 25px;
+}
+
+.meals-title h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.title-line {
+    width: 50px;
+    height: 3px;
+    background: #f06a28;
+    margin-top: 8px;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    padding: 0 12px 30px;
+}
+
+
+.meal-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.meal-card img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
+
+.meal-card img {
+    width: 300px;
+    height: 160px;
+}
+
+.meal-card h5 {
+
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 8px;
+    color:black
+}
+
+/* thirdpage */
+.meal-descrip{
+    border: 1px solid;
+    margin-top: 10px;
+    color:white;
+    background-color: orangered;
+    padding: 8px;
+
+}
