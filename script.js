@@ -137,16 +137,52 @@ async function getMeal(){
         </div>`;
 
         let img =`
-          <div class="img">
+          <div class="image">
         <img src="${mealData.strMealThumb}">
-    </div>
-        `
+         </div>
+        `;
+
+        let desc = `
+         <div class = "dec">
+         <h3>${mealData.strMeal}</h3>
+         <h4>Category:${mealData.strCategory}</h4>
+         <p>Source: ${mealData.strSource}</p>
+         <h6>Tags:${mealData.strTags}</h6>
+
+         <div class ="teja">
+         <h5>ingridents</h5>
+         <p>${mealData.strIngredient1}</p>
+         <p>${mealData.strIngredient2}</p>
+         <p>${mealData.strIngredient3}</p>
+         <p>${mealData.strIngredient4}</p>
+         <p>${mealData.strIngredient5}</p>
+         <p>${mealData.strIngredient6}</p>
+         <p>${mealData.strIngredient7}</p>
+         <p>${mealData.strIngredient8}</p>
+         <p>${mealData.strIngredient9}</p>
+         <p>${mealData.strIngredient10}</p>
+         <p>${mealData.strIngredient11}</p>
+         <p>${mealData.strIngredient12}</p>
+         <p>${mealData.strIngredient13}</p>
+         <p>${mealData.strIngredient14}</p>
+         <p>${mealData.strIngredient15}</p>
+         <p>${mealData.strIngredient16}</p>
+         <p>${mealData.strIngredient17}</p>
+         <p>${mealData.strIngredient18}</p>
+         <p>${mealData.strIngredient19}</p>
+         <p>${mealData.strIngredient20}</p>
+         </div>
+         </div>
+        `;
+
+       
 
 
 
 
 
-    ingrident.innerHTML = ` ${name} ${img}`
+
+    ingrident.innerHTML = ` ${name} ${img} ${desc}`;
     
 
 }
