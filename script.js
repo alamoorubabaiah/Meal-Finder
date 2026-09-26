@@ -175,14 +175,39 @@ async function getMeal(){
          </div>
         `;
 
-       
 
 
+    
+        let dd = `
+        <div class = "data">
+        <h5>Measure:</h5>
+        <p>${mealData.strMeasure1}</p>
+        <p>${mealData.strMeasure2}</p>
+        <p>${mealData.strMeasure3}</p>
+        <p>${mealData.strMeasure4}</p>
+        <p>${mealData.strMeasure5}</p>
+        <p>${mealData.strMeasure6}</p>
+        <p>${mealData.strMeasure7}</p>
+        <p>${mealData.strMeasure8}</p>
+        <p>${mealData.strMeasure9}</p>
+        <p>${mealData.strMeasure10}</p>
+        <p>${mealData.strMeasure11}</p>
+        <p>${mealData.strMeasure12}</p>
+        <p>${mealData.strMeasure13}</p>
+        <p>${mealData.strMeasure14}</p>
+        <p>${mealData.strMeasure15}</p>
+        <p>${mealData.strMeasure16}</p>
+        <p>${mealData.strMeasure17}</p>
+        <p>${mealData.strMeasure18}</p>
+        <p>${mealData.strMeasure19}</p>
+        <p>${mealData.strMeasure20}</p>
 
-
-
-
-    ingrident.innerHTML = ` ${name} ${img} ${desc}`;
+        </div>
+        
+        
+        `
+    
+    ingrident.innerHTML = ` ${name} ${img} ${desc} ${dd}`;
     
 
 }
