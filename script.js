@@ -175,9 +175,6 @@ async function getMeal(){
          </div>
         `;
 
-
-
-    
         let dd = `
         <div class = "data">
         <h5>Measure:</h5>
@@ -201,15 +198,16 @@ async function getMeal(){
         <p>${mealData.strMeasure18}</p>
         <p>${mealData.strMeasure19}</p>
         <p>${mealData.strMeasure20}</p>
+        </div> `
 
-        </div>
-        
-        
+        let instruc = `
+        <div class = "instructions">
+        <h5>Instructions:</h5>
+        <p>${mealData.strInstructions}</p>
+        </div> 
         `
     
-    ingrident.innerHTML = ` ${name} ${img} ${desc} ${dd}`;
-    
-
+    ingrident.innerHTML = ` ${name} ${img} ${desc} ${dd} ${instruc}`;
 }
 getMeal();
 
