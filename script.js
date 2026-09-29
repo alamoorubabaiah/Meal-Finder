@@ -153,9 +153,9 @@ async function getMeal() {
       <div class="dataa">
          <div class = "dec">
          <h3>${mealData.strMeal}</h3> <hr>
-         <h4>Category:${mealData.strCategory}</h4>
-         <p>Source: ${mealData.strSource}</p>
-         <h6>Tags:${mealData.strTags}</h6>
+         <h4>${mealData.strCategory}</h4>
+         <p> ${mealData.strSource}</p>
+         <h6>${mealData.strTags}</h6>
 
          <div class ="teja">
          <h5>ingridents</h5>

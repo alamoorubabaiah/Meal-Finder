@@ -367,7 +367,7 @@
     color:black;
 }
 .dec h6{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 100px;
     color: orangered;
     padding: 2px;
@@ -411,6 +411,7 @@
 .dec h4 {
     font-size: 14px;
     margin: 10px 0;
+    color: #555;
 }
 
 
@@ -418,13 +419,33 @@
 .dec > p {
     font-size: 13px;
     margin: 8px 0;
+    color: #555;
 }
 
+.dec p::before{
+    content: "source:";
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
 
 /* Tags */
 .dec h6 {
     font-size: 13px;
-    margin: 15px 0;
+    /* margin: 15px 0; */
+    color:orangered;
+   
+}
+.dec h6::before{
+    content: "Tag:";
+    color: black;
+    font-weight: bold;
+}
+.dec h4::before{
+    content: "Category:";
+     color: black;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -500,14 +521,12 @@
 
 
 .data1 {
-        width: 98%;
-        margin-left: 20px;
+     width: 98%;
+    margin-left: 20px;
     max-width: none;
-    
     padding: 12px 30px;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -543,13 +562,14 @@
 }
 
 .instructions {
-        width: 98%;
+    width: 98%;
     max-width: none;
     margin: 25px 0 40px;
     padding: 18px 30px;
     border: 1px solid #eeeeee;
     background-color: #fff;
     box-sizing: border-box;
+    margin-left: 20px;
 }
 
 .instructions h5 {
