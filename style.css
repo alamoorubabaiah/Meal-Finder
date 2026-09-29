@@ -83,7 +83,7 @@
 
 /* banner */
 .banner{
-    background-image: url("./assets/Banner.png");
+    background-image: url("./assets/ban.jpeg");
      width: 100%;
     height: 500px;  
 }
@@ -123,7 +123,8 @@
 }
 .Categories{
     color: black;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+
     margin-left: 20px;
      /* background-color: whitesmoke; */
 }
@@ -295,15 +296,249 @@
 }
 
 /* thirdpage */
+
 .meal-descrip{
     border: 1px solid;
     margin-top: 10px;
     color:white;
     background-color: orangered;
     padding: 8px;
+    width: 99%;
+    margin-left: 8px;
+
+}
+
+.detail{
+    color: black;
+    margin-top: 40px;
+    margin-left: 8px;
+}
+.detail hr {
+    width: 70px;
+    background-color: orangered ;
+    opacity: 1;
+   border: none;
+    height: 5px;
+
 
 }
 .image img{
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+
+.meal-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+/* Left side */
+.image {
     width: 40%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Right side */
+.dec {
+    width: 60%;
+}
+.dec h3{
+    color: orangered;
+}
+.dec hr{
+    width:400px;
+    background-color: orangered ;
+    opacity: 1;
+   border: none;
+    height: 5px;
+}
+
+.dec h4,p{
+    color:black;
+}
+.dec h6{
+    border: 1px solid;
+    width: 100px;
+    color: orangered;
+    padding: 2px;
+    text-align: center;
+}
+
+.dataa{
+    margin-left: 70px;
+}
+
+
+
+/* Measurements */
+.data1 {
+    margin-top: 30px;
+    border: 1px solid;
+    margin: 10px;
     padding: 10px;
 }
+
+
+/* Main description area */
+.dataa {
+    width: 60%;
+}
+
+
+.dec h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+
+.dec hr {
+    border: none;
+    border-top: 1px solid #f15a16;
+    margin-bottom: 20px;
+}
+
+
+.dec h4 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+/* Source */
+.dec > p {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+
+/* Tags */
+.dec h6 {
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+
+   /* Ingredients */
+.teja {
+    margin-top: 20px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+.teja {
+    background-color: #f15a16;
+    width: 100%;
+    max-width: 500px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 8px;
+    margin-top: 20px;
+}
+
+
+.teja h5 {
+    grid-column: 1 / -1;
+    margin: 0 0 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.teja p {
+    margin: 0;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 23px;
+}
+
+
+.teja p::before {
+    content: counter(ingredient);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #1aa7c9;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Counter */
+.teja {
+    counter-reset: ingredient;
+}
+.teja p {
+    counter-increment: ingredient;
+}
+.teja p:empty {
+    display: none;
+}
+
+
+
+.data1 {
+        width: 98%;
+        margin-left: 20px;
+    max-width: none;
+    
+    padding: 12px 30px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 12px;
+}
+
+.data1 h5 {
+    grid-column: 1 / -1;
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+
+.data1 p {
+    position: relative;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #555;
+    line-height: 20px;
+}
+.data1 p::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #f15a16;
+}
+

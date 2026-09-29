@@ -54,7 +54,7 @@ async function fdata() {
 
 // secondpage:-
 function vegfun(cate) {
-    window.open(`second-page.html?category=${encodeURIComponent(cate)}`,"_self");
+    window.open(`second-page.html?category=${encodeURIComponent(cate)}`, "_self");
 }
 
 async function vegan() {
@@ -77,8 +77,8 @@ async function vegan() {
         sec.innerHTML = `<h2>Category not found</h2>`;
         return;
     }
-//    for related meals
-    let mealResponse = await fetch( `https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(category)}`);
+    //    for related meals
+    let mealResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(category)}`);
     let mealData = await mealResponse.json();
 
     //    description
@@ -122,29 +122,37 @@ function note(three) {
     window.open(`third-page.html?meal=${encodeURIComponent(three)}`, "_self");
 }
 
-async function getMeal(){
+async function getMeal() {
     let params = new URLSearchParams(window.location.search);
     let meal = params.get("meal");
-     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(meal)}`);
-     let  data = await response.json();
-      let mealData = data.meals.find((item) => {
+    let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(meal)}`);
+    let data = await response.json();
+    let mealData = data.meals.find((item) => {
         return item.strMeal.toLowerCase() === meal.toLowerCase();
     });
-   
-       let name = `
+
+    let name = `
         <div class="meal-descrip">
           <h4> 🏡>>${mealData.strMeal} </h4>
         </div>`;
 
-        let img =`
+    let details =
+        `
+        <div class = "detail">
+        <h3>MEAL DETAILS</h3> <hr>
+        </div>
+        `
+
+    let img = `
           <div class="image">
         <img src="${mealData.strMealThumb}">
          </div>
         `;
 
-        let desc = `
+    let desc = `
+      <div class="dataa">
          <div class = "dec">
-         <h3>${mealData.strMeal}</h3>
+         <h3>${mealData.strMeal}</h3> <hr>
          <h4>Category:${mealData.strCategory}</h4>
          <p>Source: ${mealData.strSource}</p>
          <h6>Tags:${mealData.strTags}</h6>
@@ -173,42 +181,65 @@ async function getMeal(){
          <p>${mealData.strIngredient20}</p>
          </div>
          </div>
+         </div>
         `;
+    let measurements = "";
 
-        let dd = `
-        <div class = "data">
+    for (let i = 1; i <= 20; i++) {
+
+        let measure = mealData[`strMeasure${i}`];
+
+        if (measure && measure.trim() !== "") {
+            measurements += `
+            <p>${measure.trim()}</p>
+        `;
+        }
+    }
+
+    let dd = `
+    <div class="data1">
         <h5>Measure:</h5>
-        <p>${mealData.strMeasure1}</p>
-        <p>${mealData.strMeasure2}</p>
-        <p>${mealData.strMeasure3}</p>
-        <p>${mealData.strMeasure4}</p>
-        <p>${mealData.strMeasure5}</p>
-        <p>${mealData.strMeasure6}</p>
-        <p>${mealData.strMeasure7}</p>
-        <p>${mealData.strMeasure8}</p>
-        <p>${mealData.strMeasure9}</p>
-        <p>${mealData.strMeasure10}</p>
-        <p>${mealData.strMeasure11}</p>
-        <p>${mealData.strMeasure12}</p>
-        <p>${mealData.strMeasure13}</p>
-        <p>${mealData.strMeasure14}</p>
-        <p>${mealData.strMeasure15}</p>
-        <p>${mealData.strMeasure16}</p>
-        <p>${mealData.strMeasure17}</p>
-        <p>${mealData.strMeasure18}</p>
-        <p>${mealData.strMeasure19}</p>
-        <p>${mealData.strMeasure20}</p>
-        </div> `
+        ${measurements}
+    </div>
+`;
 
-        let instruc = `
-        <div class = "instructions">
+
+
+    let instructionList = "";
+
+    let instructions = mealData.strInstructions
+        .split(".")
+        .filter(value => value.trim() !== "");
+
+    for (let instruction of instructions) {
+        instructionList += `
+        <div class="instruction-item">
+            <span class="check">✓</span>
+            <p>${instruction.trim()}.</p>
+        </div>
+    `;
+    }
+
+
+    let instruc = `
+    <div class="instructions">
         <h5>Instructions:</h5>
-        <p>${mealData.strInstructions}</p>
-        </div> 
-        `
-    
-    ingrident.innerHTML = ` ${name} ${img} ${desc} ${dd} ${instruc}`;
+
+        <div class="instruction-list">
+            ${instructionList}
+        </div>
+    </div>
+`;
+    let result = `
+    <div class="meal-container">
+        ${img}
+        ${desc}
+    </div>
+`;
+    let ammu = document.getElementById("ammu")
+    ammu.innerHTML = `  ${name} ${details} ${result} ${dd} ${instruc}`
 }
+
 getMeal();
 
 
