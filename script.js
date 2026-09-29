@@ -183,12 +183,10 @@ async function getMeal() {
          </div>
          </div>
         `;
+
     let measurements = "";
-
     for (let i = 1; i <= 20; i++) {
-
         let measure = mealData[`strMeasure${i}`];
-
         if (measure && measure.trim() !== "") {
             measurements += `
             <p>${measure.trim()}</p>
@@ -206,7 +204,6 @@ async function getMeal() {
 
 
     let instructionList = "";
-
     let instructions = mealData.strInstructions
         .split(".")
         .filter(value => value.trim() !== "");
@@ -219,7 +216,6 @@ async function getMeal() {
         </div>
     `;
     }
-
 
     let instruc = `
     <div class="instructions">

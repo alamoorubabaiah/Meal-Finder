@@ -542,3 +542,51 @@
     background-color: #f15a16;
 }
 
+.instructions {
+        width: 98%;
+    max-width: none;
+    margin: 25px 0 40px;
+    padding: 18px 30px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.instructions h5 {
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f15a16;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.check {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #f15a16;
+    color: #f15a16;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+.instruction-item p {
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.7;
+    flex: 1;
+}
