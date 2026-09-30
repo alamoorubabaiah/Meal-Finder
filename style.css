@@ -383,94 +383,110 @@
     padding: 10px;
 }
 
+.meal-container {
+    width: 88%;
+    margin: 30px auto;
 
-/* Main description area */
-.dataa {
-    width: 60%;
-   
-   
+    display: flex;
+    align-items: flex-start;
+
+    gap: 55px;
+}
+.image {
+    width: 45%;
+    flex-shrink: 0;
 }
 
+.image img {
+    width: 100%;
+    height: 470px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 0;
+}
+
+.dataa {
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.dec {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .dec h3 {
-    margin: 0 0 10px;
+    margin: -8px 0 18px;
     font-size: 24px;
+    color: orangered;
 }
-
 
 .dec hr {
-    border: none;
-    border-top: 1px solid #f15a16;
-    margin-bottom: 20px;
-}
-
-
-.dec{
-margin-left: 250px;
-}
-.dec h4 {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #555;
-}
-
-
-/* Source */
-.dec > p {
-    font-size: 13px;
-    margin: 8px 0;
-    color: #555;
-}
-
-.dec p::before{
-    content: "source:";
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/* Tags */
-.dec h6 {
-    font-size: 13px;
-    /* margin: 15px 0; */
-    color:orangered;
-   
-}
-.dec h6::before{
-    content: "Tag:";
-    color: black;
-    font-weight: bold;
-}
-.dec h4::before{
-    content: "Category:";
-     color: black;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-
-   /* Ingredients */
-.teja {
-    margin-top: 20px;
-    border: 1px solid;
-    margin: 5px;
-    padding: 5px;
-    /* margin-left: 250px; */
-}
-.teja {
-    background-color: #f15a16;
     width: 100%;
-    max-width: 500px;
-    padding: 18px 20px;
+    height: 5px;
+    margin: 0 0 25px;
+    border: none;
+    background-color: orangered;
+    opacity: 1;
+}
+
+
+.dec h4 {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.dec h4::before {
+    content: "Category: ";
+    color: black;
+    font-weight: bold;
+}
+
+.dec > p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.dec > p::before {
+    content: "Source: ";
+    color: black;
+    font-weight: bold;
+}
+
+
+.dec h6 {
+    margin: 15px 0 25px;
+    font-size: 13px;
+    color: orangered;
+}
+
+.dec h6::before {
+    content: "Tags: ";
+    color: black;
+    font-weight: bold;
+}
+.teja {
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 18px 14px;
     box-sizing: border-box;
-    color: white;
+    background-color: #f15a16;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
-    row-gap: 8px;
-    margin-top: 20px;
+    row-gap: 10px;
+    counter-reset: ingredient;
 }
-
 
 .teja h5 {
     grid-column: 1 / -1;
@@ -482,12 +498,13 @@ margin-left: 250px;
 
 
 .teja p {
+    position: relative;
     margin: 0;
+    padding-left: 24px;
     color: white;
     font-size: 13px;
     line-height: 20px;
-    position: relative;
-    padding-left: 23px;
+    counter-increment: ingredient;
 }
 
 
@@ -496,8 +513,8 @@ margin-left: 250px;
     position: absolute;
     left: 0;
     top: 1px;
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     background-color: #1aa7c9;
     color: white;
@@ -508,18 +525,10 @@ margin-left: 250px;
     justify-content: center;
 }
 
-/* Counter */
-.teja {
-    counter-reset: ingredient;
-}
-.teja p {
-    counter-increment: ingredient;
-}
+
 .teja p:empty {
     display: none;
 }
-
-
 
 .data1 {
      width: 98%;
@@ -538,10 +547,9 @@ margin-left: 250px;
     grid-column: 1 / -1;
     margin: 0 0 10px;
     font-size: 14px;
-    font-weight: normal;
-    color: #333;
+    font-weight: bold;
+    color:black;
 }
-
 
 .data1 p {
     position: relative;
@@ -576,10 +584,10 @@ margin-left: 250px;
 .instructions h5 {
     margin: 0 0 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #f15a16;
+    /* border-bottom: 1px solid #f15a16; */
     font-size: 14px;
-    font-weight: normal;
-    color: #333;
+    font-weight: bold;
+    color:black;
 }
 
 .instruction-item {
@@ -610,4 +618,5 @@ margin-left: 250px;
     line-height: 1.7;
     flex: 1;
 }
+
 

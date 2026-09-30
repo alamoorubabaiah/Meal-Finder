@@ -42,7 +42,11 @@ async function fdata() {
     let d = await res.json()
     // console.log(d)//array of obj
     let result1 = d.meals.map((value) => {
-        return `<div class = "filt">
+        return `
+       
+        
+        
+        <div class = "filt">
           <h6>${value.strCategory}</h6>
           <img src = "${value.strMealThumb}" width = "240px">
           <p>${value.strArea}</p>
