@@ -392,6 +392,8 @@
 /* Main description area */
 .dataa {
     width: 60%;
+   
+   
 }
 
 
@@ -408,6 +410,9 @@
 }
 
 
+.dec{
+margin-left: 250px;
+}
 .dec h4 {
     font-size: 14px;
     margin: 10px 0;
@@ -455,6 +460,7 @@
     border: 1px solid;
     margin: 5px;
     padding: 5px;
+    /* margin-left: 250px; */
 }
 .teja {
     background-color: #f15a16;
