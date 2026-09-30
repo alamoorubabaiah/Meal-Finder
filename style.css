@@ -282,11 +282,6 @@
     display: block;
 }
 
-.meal-card img {
-    width: 300px;
-    height: 160px;
-}
-
 .meal-card h5 {
 
     font-size: 11px;
@@ -607,7 +602,6 @@ margin-left: 250px;
     flex-shrink: 0;
 }
 
-
 .instruction-item p {
     margin: 0;
     padding: 0;
@@ -616,3 +610,4 @@ margin-left: 250px;
     line-height: 1.7;
     flex: 1;
 }
+

@@ -116,6 +116,7 @@ async function vegan() {
 }
 vegan();
 
+
 // thirdpage:-
 
 function note(three) {
@@ -127,7 +128,7 @@ async function getMeal() {
     let meal = params.get("meal");
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(meal)}`);
     let data = await response.json();
-    let mealData = data.meals.find((item) => {
+    let mealData = data.meals.find((item) => { 
         return item.strMeal.toLowerCase() === meal.toLowerCase();
     });
 
