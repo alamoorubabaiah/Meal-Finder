@@ -9,7 +9,9 @@ async function user() {
           <button class="btn" onclick="vegfun('${product.strCategory}')"> <h6>${product.strCategory}</h6> </button>
          </div> `
     })
+   if (one11) {
     one11.innerHTML += result.join("");
+}
 }
 user()
 
@@ -25,7 +27,9 @@ async function fn() {
         <img src="${value.strCategoryThumb}" onclick="vegfun('${value.strCategory}')">
         </div> `
     })
+   if (cart) {
     cart.innerHTML += result.join("");
+}
 }
 fn()
 
@@ -45,7 +49,7 @@ async function fdata() {
        let heading = `
         <h3 class="meal-heading">Meals</h3>
     `;
-    let result1 = d.meals.map((value) => {
+   let result1 = d.meals?.map((value) => {
         return `
        
         
@@ -138,9 +142,13 @@ async function getMeal() {
     let meal = params.get("meal");
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(meal)}`);
     let data = await response.json();
-    let mealData = data.meals.find((item) => { 
-        return item.strMeal.toLowerCase() === meal.toLowerCase();
-    });
+   let mealData = data.meals?.find((item) => {  
+    return item.strMeal.toLowerCase() === meal.toLowerCase(); 
+});
+if (!mealData) {
+    console.log("Meal not found");
+    return;
+}
 
     let name = `
         <div class="meal-descrip">
