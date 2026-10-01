@@ -9,6 +9,10 @@
     height: 50px;  
     display: flex; 
     justify-content: space-between;
+      position: sticky;
+    top: 0;
+    z-index: 5000;
+    background-color: orangered;
     /* align-items: center; */
 }
 .logo{
