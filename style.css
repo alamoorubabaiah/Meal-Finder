@@ -619,4 +619,63 @@
     flex: 1;
 }
 
+/* laptop media Query... */
+@media (max-width: 1200px) {
 
+    /* Categories */
+    #cart {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .items {
+        width: calc(25% - 15px);
+    }
+
+    /* Filter */
+    #func {
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .filt {
+        margin-left: 15px;
+    }
+
+    .filt h6 {
+        margin-left: 80px;
+    }
+
+    /* Meal cards */
+    .meal-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .meal-card img {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* Meal details */
+    .dec {
+        margin-left: 0;
+    }
+
+    .dec hr {
+        width: 300px;
+    }
+
+    .dataa {
+        margin-left: 30px;
+        width: 60%;
+    }
+
+    .data1 {
+        width: 96%;
+        margin-left: 20px;
+    }
+
+    .instructions {
+        width: 96%;
+    }
+}
