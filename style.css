@@ -56,6 +56,8 @@
     min-height: 100vh;
     padding: 70px 20px 20px;
     background-color: white;
+    
+    
 }
 
 .menu-close-btn {
@@ -855,3 +857,79 @@
         width: 100%;
     }
 }
+
+
+
+    .banner {
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .con {
+        padding: 80px 15px 0;
+        line-height: 2.5;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .banner h4 {
+        font-size: 15px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form input {
+        width: 75%;
+        height: 45px;
+        padding-left: 20px;
+    }
+
+    #form i {
+        width: 45px;
+        height: 45px;
+        padding-top: 13px;
+        flex-shrink: 0;
+    }
+
+
+    .Categories {
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .Categories h2 {
+        font-size: 20px;
+    }
+
+    #cart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .items {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .items img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .items h6 {
+        font-size: 9px;
+        padding: 4px;
+    }
+
