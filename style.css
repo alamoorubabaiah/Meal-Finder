@@ -163,7 +163,7 @@
     /* border: 1px solid black; */
     position: relative;
     padding: 10px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -206,6 +206,23 @@
    /* border: 1px solid; */
    margin-left: 35px;
    
+}
+/* .filt h3{
+    color: black;
+}
+.filt hr{
+        width:400px;
+    background-color: orangered ;
+    opacity: 1;
+   border: none;
+    height: 5px;
+
+} */
+ .meal-heading {
+  width: 100%;
+  margin: 20px 0 30px;
+  font-size: 40px;
+  text-decoration: underline orangered;
 }
 .filt h6{
     border: 1px solid;

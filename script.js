@@ -41,6 +41,10 @@ async function fdata() {
     let res = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
     let d = await res.json()
     // console.log(d)//array of obj
+
+       let heading = `
+        <h3 class="meal-heading">Meals</h3>
+    `;
     let result1 = d.meals.map((value) => {
         return `
        
@@ -53,7 +57,7 @@ async function fdata() {
           <h5>${value.strMeal}</h5>
         </div> `
     })
-    func.innerHTML = result1.join("")
+    func.innerHTML = heading + result1.join("")
 }
 
 // secondpage:-
