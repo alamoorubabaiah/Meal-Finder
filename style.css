@@ -933,3 +933,203 @@
         padding: 4px;
     }
 
+
+    #func {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .filt {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .filt img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .filt h6 {
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        top: 30px;
+    }
+
+    .filt h5 {
+        font-size: 13px;
+    }
+
+
+    .category-description {
+        margin: 20px 15px 30px;
+        padding: 12px;
+    }
+
+    .category-description h2 {
+        font-size: 17px;
+    }
+
+    .category-description p {
+        font-size: 12px;
+    }
+
+    .meals-title {
+        margin: 0 15px 20px;
+    }
+
+    .meals-title h2 {
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .meal-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 15px 25px;
+    }
+
+    .meal-card {
+        width: 100%;
+    }
+
+    .meal-card img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    .meal-card h5 {
+        font-size: 10px;
+        margin: 7px;
+    }
+
+
+
+    .meal-descrip {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .detail {
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .detail h2 {
+        font-size: 20px;
+    }
+
+    /* Change image + details
+       from side-by-side to vertical */
+
+    .meal-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 15px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .dec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dec h3 {
+        font-size: 21px;
+    }
+
+    .dec hr {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dec h4 {
+        font-size: 13px;
+    }
+
+    .dec > p {
+        font-size: 12px;
+        word-break: break-word;
+    }
+    
+    .teja {
+        width: 100%;
+        max-width: none;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    .teja h5 {
+        font-size: 14px;
+    }
+
+    .teja p {
+        font-size: 11px;
+        padding-left: 22px;
+    }
+
+    .data1 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        padding: 12px 15px;
+
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+
+    .data1 h5 {
+        font-size: 13px;
+    }
+
+    .data1 p {
+        font-size: 12px;
+    }
+
+    .instructions {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .instructions h5 {
+        font-size: 13px;
+    }
+
+    .instruction-item {
+        margin-bottom: 10px;
+    }
+
+    .instruction-item p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .check {
+        width: 11px;
+        height: 11px;
+        margin-right: 8px;
+    }
+
+
