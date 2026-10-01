@@ -38,7 +38,7 @@ async function fdata() {
         func.innerHTML = ""
         return
     }
-    let res = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+    let res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(search)}`)
     let d = await res.json()
     // console.log(d)//array of obj
 
@@ -122,7 +122,9 @@ async function vegan() {
         </div>
     `;
 }
-vegan();
+if (document.getElementById("sec")) {
+    vegan();
+}
 
 
 // thirdpage:-
@@ -245,7 +247,9 @@ async function getMeal() {
     ammu.innerHTML = `  ${name} ${details} ${result} ${dd} ${instruc}`
 }
 
-getMeal();
+if (document.getElementById("ammu")) {
+    getMeal();
+}
 
 
 
