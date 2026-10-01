@@ -631,7 +631,6 @@
     flex: 1;
 }
 
-/* laptop media Query... */
 @media (max-width: 1200px) {
 
     /* Categories */
@@ -693,7 +692,6 @@
 }
 
 
-/* tablet */
 @media (max-width: 1023px) {
 
     /* Navbar */
@@ -830,8 +828,6 @@
 }
 
 
-/* mobile */
-
 @media (max-width: 767px) {
 
     /* Navbar */
@@ -856,9 +852,6 @@
     .menu-panel {
         width: 100%;
     }
-}
-
-
 
     .banner {
         width: 100%;
@@ -900,6 +893,7 @@
     }
 
 
+
     .Categories {
         margin-left: 15px;
         margin-top: 30px;
@@ -934,6 +928,7 @@
     }
 
 
+
     #func {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -964,7 +959,6 @@
     .filt h5 {
         font-size: 13px;
     }
-
 
     .category-description {
         margin: 20px 15px 30px;
@@ -1008,7 +1002,6 @@
         font-size: 10px;
         margin: 7px;
     }
-
 
 
     .meal-descrip {
@@ -1069,7 +1062,7 @@
         font-size: 12px;
         word-break: break-word;
     }
-    
+
     .teja {
         width: 100%;
         max-width: none;
@@ -1131,5 +1124,87 @@
         height: 11px;
         margin-right: 8px;
     }
+}
 
 
+@media (max-width: 480px) {
+
+    .banner {
+        height: 320px;
+    }
+
+    .con {
+        padding-top: 70px;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+    }
+
+    .banner h4 {
+        font-size: 13px;
+    }
+
+    #form input {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    /* Categories */
+    #cart {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .items {
+        padding: 6px;
+    }
+
+    .items h6 {
+        font-size: 8px;
+    }
+
+    /* Filter */
+    #func {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .filt img {
+        height: 130px;
+    }
+
+    /* Meals */
+    .meal-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 10px 20px;
+    }
+
+    .meal-card img {
+        height: 110px;
+    }
+
+    .meal-card h5 {
+        font-size: 9px;
+    }
+
+    /* Ingredients */
+    .teja {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Instructions */
+    .instructions {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        padding: 12px;
+    }
+
+    .data1 {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+}
