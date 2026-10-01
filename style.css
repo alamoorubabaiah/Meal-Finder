@@ -679,3 +679,140 @@
         width: 96%;
     }
 }
+
+
+/* tablet */
+@media (max-width: 1023px) {
+
+    /* Navbar */
+    #nav {
+        height: 55px;
+    }
+
+    .menu-open-btn {
+        right: 15px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .con {
+        padding-top: 100px;
+        line-height: 3;
+    }
+
+    #form input {
+        width: 300px;
+        height: 45px;
+    }
+
+    #form i {
+        width: 45px;
+        height: 45px;
+        padding-top: 12px;
+    }
+
+    /* Categories */
+    #cart {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .items {
+        width: calc(33.333% - 14px);
+    }
+
+    .items img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Filter */
+    #func {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .filt {
+        margin-left: 5px;
+        width: calc(33.333% - 15px);
+    }
+
+    .filt img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .filt h6 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+
+    /* Category description */
+    .category-description {
+        margin: 25px 15px 40px;
+    }
+
+    /* Meal grid */
+    .meal-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 15px 30px;
+    }
+
+    .meal-card img {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* Meal details */
+    .meal-container {
+        gap: 25px;
+        margin: 25px 15px;
+    }
+
+    .image {
+        width: 45%;
+    }
+
+    .dec {
+        width: 55%;
+        margin-left: 0;
+    }
+
+    .dec hr {
+        width: 250px;
+    }
+
+    .dataa {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Ingredients */
+    .teja {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Measurements */
+    .data1 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        padding: 12px 20px;
+        column-gap: 40px;
+    }
+
+    /* Instructions */
+    .instructions {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        padding: 18px 20px;
+    }
+}
